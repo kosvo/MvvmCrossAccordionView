@@ -114,7 +114,6 @@ In viewController we just need create our ViewSource and bind it.
 			TableView.Source = source;
 			var set = this.CreateBindingSet<HomeView, HomeViewModel>();
 			set.Bind(source).For(s => s.ItemsSource).To(vm => vm.Items);
-			set.Bind(addSensorButton).To(vm => vm.AddSensorCommand);
 			set.Apply();
 
 That's all!
